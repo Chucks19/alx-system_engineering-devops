@@ -5,7 +5,4 @@
 id=$(pgrep -f "./4-to_infinity_and_beyond")
 
 # Terminate the infinate process
-if [ -n "$id" ]
-then
-  kill -15 "$id"
-fi
+kill -15 "$id"
