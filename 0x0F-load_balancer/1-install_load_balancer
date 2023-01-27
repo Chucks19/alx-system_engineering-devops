@@ -16,8 +16,8 @@ frontend  Chucks-frontend
         default_backend chucks-backend
 backend Chucks-backend
         balance roundrobin
-        server 73539-web-01 100.26.158.25:80 check
-        server 73539-web-02 100.25.222.86:80 check
+        server 73539-web-01 52.91.122.164:80 check
+        server 73539-web-02 54.87.172.5:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
