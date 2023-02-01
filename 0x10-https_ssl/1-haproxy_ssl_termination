@@ -35,10 +35,10 @@ defaults
 
 frontend My_frontend
 	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/www.samchris.tech/fullchain.pem
+	bind *:443 ssl crt /etc/haproxy/certs/lb-01.chucks21.tech/fullchain.pem
 	default_backend myservers
 
 backend My_webservers
         balance roundrobin
-        server 73539-web-01 54.236.25.207:80 check
-        server 73539-web-02 52.91.152.183:80 check
+        server 73539-web-01  52.91.122.164:80 check
+        server 73539-web-02  54.87.172.5:80 check
