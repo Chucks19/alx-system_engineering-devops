@@ -19,7 +19,7 @@ if __name__ == '__main__':
     completed = []
 
     for task in todos:
-        if a.get('completed'):
+        if task.get('completed'):
             completed.append(task)
             done += 1
 
